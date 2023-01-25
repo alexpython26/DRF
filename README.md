@@ -1,4 +1,6 @@
-DRF проба
-### nvkdhjlth
-## nvkdhj768lth
+
+###  DRF проба
+#### базовый Django REST Framework 
+
+
 
