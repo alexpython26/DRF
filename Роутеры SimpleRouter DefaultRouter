@@ -1,0 +1,21 @@
+
+    router.urls:
+
+[
+    #отвечает за получение статей и возможность добавление статей если функ есть
+    /api/v1/tupe
+<URLPattern '^tupe/$' [name='tupe-list']>
+<URLPattern '^tupe\.(?P<format>[a-z0-9]+)/?$' [name='tupe-list']>,
+
+
+    #отвечет за получение за конкретных статей и изменение, удаление
+    /api.v1/tupe/pk/
+<URLPattern '^tupe/(?P<pk>[^/.]+)/$' [name='tupe-detail']>,
+<URLPattern '^tupe/(?P<pk>[^/.]+)\.(?P<format>[a-z0-9]+)/?$' [name='tupe-detail']>,
+
+
+    #присутсвует в DefaultRouter возращает список марштрутов если есть в роутере
+    /api/v1/
+<URLPattern '^$' [name='api-root']>,
+<URLPattern '^\.(?P<format>[a-z0-9]+)/?$' [name='api-root']>]
+]

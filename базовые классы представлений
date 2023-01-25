@@ -1,0 +1,11 @@
+Django REST Framework
+
+CreateAPIView - создание данных по POST-запросу,
+ListAPIView - чтение списка данных по GET-запросу,
+RetrieveAPIView - чтение конкретных данных по GET-запросу,
+DestroyAPIView - удаление данных по DELETE-запросу,
+UpdateAPIView - изменение записи по PUT- или PATCH-запросу,
+ListCreateAPIView - для чтения (по GET) и создание списка данных (по POST),
+RetrieveUpdateAPIView - чтение и изменение отдельной записи(GET, POST),
+RetrieveDestroyAPIView - чтение GET и удаление DELETE запросов отдельной записи,
+RetrieveUpdateDestroyAPIView - чтение, изменение и добавление отдельной записи(GET, PUT, PATCH, DELETE-запросов)
