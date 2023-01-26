@@ -1,0 +1,10 @@
+
+
+Ограничения доступа (permissions)
+
+
+
+AllowAny - полный доступ,
+IsAuthenticated - только для авторизованных пользователей
+IsAdminUser - только для администраторов
+IsAuthenticatedOrReadOnly - только для авторизированных

@@ -12,7 +12,9 @@ class Tupe(models.Model):
     time_update = models.DateTimeField(auto_now=True, verbose_name='Текст', null=True, blank=True)
     is_published = models.BooleanField(default=True, null=True, blank=True)
     cat = models.ForeignKey('Category', verbose_name='Категория', on_delete=models.PROTECT, null=True,)
+    user = models.ForeignKey(User, verbose_name='Пользователь', on_delete=models.CASCADE)
 
+    # on_delete=models.CASCADE - удаляет все поля если удалил пользователь
 
     def __str__(self):
         return self.title
